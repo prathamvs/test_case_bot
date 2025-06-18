@@ -20,14 +20,14 @@ class InformationRetrievalProcessor:
         # Initialize embeddings
         self.openai_embeddings = OpenAIEmbeddings(
             engine="text-embedding-ada-002",
-            openai_api_key="b74bf34f88b449f5b25764e363d4dd49"
+            openai_api_key=""
         )
         
         # Initialize LLM
         self.llm = ChatOpenAI(
             engine="gpt-4",
             temperature=0,
-            openai_api_key="b74bf34f88b449f5b25764e363d4dd49",
+            openai_api_key="",
         )
         
         # Initialize MongoDB connection
@@ -128,8 +128,8 @@ class InformationRetrievalProcessor:
             llm=ChatOpenAI(
                 engine="gpt-4",
                 temperature=0,
-                openai_api_base="https://apim-guardian-prv-fc.aihub.se.com",
-                openai_api_key="b74bf34f88b449f5b25764e363d4dd49"
+                openai_api_base="",
+                openai_api_key=""
             ),
             chain_type="stuff",
             retriever=retriever,

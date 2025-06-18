@@ -23,10 +23,10 @@ app.add_middleware(
 )
 
 # Initialize OpenAI configuration
-openai.api_type = "azure"
-openai.api_base = "https://apim-guardian-prv-fc.aihub.se.com"
-openai.api_version = "2024-06-01"
-openai.api_key = "b74bf34f88b449f5b25764e363d4dd49"
+openai.api_type = ""
+openai.api_base = ""
+openai.api_version = ""
+openai.api_key = ""
 
 # Initialize services
 embeddings = OpenAIEmbeddings(

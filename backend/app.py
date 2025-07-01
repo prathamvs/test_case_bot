@@ -64,9 +64,9 @@ app.add_middleware(
 # cert_path = os.path.join(absolute_path , 'pki-it-root.crt')
 # Initialize OpenAI configuration
 openai.api_type = "azure"
-openai.api_base = "https://apim-guardian-prv-fc.aihub.se.com"
+openai.api_base = ""
 openai.api_version = "2024-06-01"
-openai.api_key = "b74bf34f88b449f5b25764e363d4dd49"
+openai.api_key = ""
 # os.environ["REQUESTS_CA_BUNDLE"]  = cert_path
 
 

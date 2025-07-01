@@ -11,7 +11,7 @@ class PromptManager:
         self.llm = ChatOpenAI(
             engine="gpt-4o",
             temperature=0,
-            openai_api_key="b74bf34f88b449f5b25764e363d4dd49"
+            openai_api_key=""
         )
         
     def analyze_and_generate_prompts(self, user_prompt: str, query: str) -> Dict:

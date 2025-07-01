@@ -32,12 +32,12 @@ class TestCaseGenerator:
         self.mongo_db = mongo_db
         self.embeddings = OpenAIEmbeddings(
             engine="text-embedding-ada-002",
-            openai_api_key="b74bf34f88b449f5b25764e363d4dd49"
+            openai_api_key=""
         )
         self.llm = ChatOpenAI(
             engine="gpt-4o",
             temperature=0,
-            openai_api_key="b74bf34f88b449f5b25764e363d4dd49"
+            openai_api_key=""
         )
         
     # Clean raw document text by removing emojis, special characters, and normalizing whitespace
